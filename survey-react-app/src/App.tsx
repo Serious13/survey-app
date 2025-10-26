@@ -161,6 +161,10 @@ export default function Page() {
                         <label htmlFor = "city">Stadt</label>
                         <input type="text" name="city" className="city" minLength={4} maxLength={8} pattern="^[A-Za-z]+$" title="Only letters are allowed" defaultValue='Stuttgart' required/>
                     </div>
+                    <div className="clientBarInfo">
+                        <label htmlFor = "phoneNumber">Telefonnummer</label>
+                        <input type="tel" name="phoneNumber" className="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="3 digits-3 digits-4 digits" defaultValue='811-222-3902' required/>
+                    </div>
                 </div>
                 <button type="submit" className="buttonSubmit" id="submitForm" >Abschicken</button>
             </form>
